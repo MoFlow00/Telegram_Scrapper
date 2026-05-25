@@ -15,22 +15,136 @@ session.headers.update({
 })
 
 # قائمة الكلمات المفتاحية الضخمة الخاصة بك
-SEARCH_TERMS = [
-    "premium apk", "pro apps", "modded apps", "unlocked apk", "android mod", "cracked software", "nova launcher setup",
-    "android apps paid free", "mod apk download", "apk hacks", "تطبيقات مهكرة", "برامج برو", "أندرويد مدفوع",
-    "ألعاب مهكرة", "تطبيقات معدلة", "نسخة احترافية", "machine learning", "best ai tools", "gpt4", "ai automation",
-    "chatgpt tools", "ai prompts", "openai tools", "llm tools", "ذكاء اصطناعي", "أدوات الذكاء", "بوتات تليجرام",
-    "تقنيات حديثة", "شروحات تقنية", "free courses", "udemy coupons", "programming scripts", "github repos",
-    "python coding", "excel tutorials", "data analysis python", "automation scripts", "كورسات مجانية", 
-    "دورة برمجية", "تعليم إكسيل", "تعلم البرمجة", "مكتبات بايثون", "كتب تقنية", "uae offers", "dubai discounts",
-    "coupon codes", "amazon deals uae", "noon coupons", "uae promo codes", "dubai deals today", "عروض الإمارات",
-    "أكواد خصم", "تخفيضات دبي", "وفر فلوسك", "iptv links", "netflix premium", "movies hd", "live tv", "series hd",
-    "arab movies", "قنوات مشفرة", "أفلام وثائقية", "بث مباشر", "سيرفرات iptv", "مسلسلات حصرية", "free api key",
-    "free llm", "open source tools", "telegram bots", "automation tools", "مواقع مفيدة", "قنوات مفيدة",
-    "معلومات عامة", "telegram search engine", "telegram directory", "telegram channels list", "telegram search bot",
-    "محرك بحث تيليجرام", "بحث قنوات تيليجرام", "دليل قنوات تيليجرام", "اكتشاف قنوات"
-]
 
+SEARCH_TERMS = [
+
+    # ─────────────────────────────
+    # IPTV + STREAMING
+    # ─────────────────────────────
+
+    "iptv عربي",
+    "سيرفرات iptv",
+    "اشتراكات iptv",
+    "بث مباشر",
+    "مشاهدة مباريات",
+    "قنوات رياضية",
+    "bein sports",
+    "شاهد vip مجانا",
+    "netflix مجانا",
+    "osn مجانا",
+    "افلام ومسلسلات",
+    "تطبيقات مشاهدة",
+    "تطبيقات افلام",
+    "movie app",
+    "live tv",
+    "streaming apps",
+
+    # ─────────────────────────────
+    # PREMIUM + MOD APPS
+    # ─────────────────────────────
+
+    "تطبيقات مهكرة",
+    "برامج مهكرة",
+    "نسخ premium",
+    "برامج مدفوعة مجانا",
+    "apk معدل",
+    "apk مهكر",
+    "تطبيقات معدلة",
+    "spotify مهكر",
+    "youtube premium",
+    "canva pro",
+    "chatgpt plus مجانا",
+    "capcut pro",
+    "alight motion مهكر",
+    "vpn premium",
+    "netflix premium",
+    "premium apps",
+
+    # ─────────────────────────────
+    # AI + TOOLS
+    # ─────────────────────────────
+
+    "ذكاء اصطناعي",
+    "ادوات ai",
+    "مواقع ذكاء اصطناعي",
+    "بوتات تليجرام",
+    "شات جي بي تي",
+    "chatgpt tools",
+    "ai tools",
+    "cursor ai",
+    "claude ai",
+    "midjourney",
+    "تصميم بالذكاء الاصطناعي",
+    "مولد صور ai",
+    "free ai tools",
+
+    # ─────────────────────────────
+    # TECH + HACKS
+    # ─────────────────────────────
+
+    "تطبيقات مفيدة",
+    "مواقع مفيدة",
+    "تريكات اندرويد",
+    "خدع اندرويد",
+    "اختراق الواي فاي",
+    "vpn مجاني",
+    "proxy مجاني",
+    "ادوات التليجرام",
+    "تطبيقات خرافية",
+    "مواقع رهيبة",
+    "مواقع سرية",
+    "telegram bots",
+    "telegram tools",
+    "free api",
+    "open source tools",
+
+    # ─────────────────────────────
+    # COURSES + LEAKS
+    # ─────────────────────────────
+
+    "كورسات مجانية",
+    "دورات مدفوعة مجانا",
+    "كورسات مهكرة",
+    "كورس برمجة",
+    "تعلم البرمجة",
+    "تعلم الذكاء الاصطناعي",
+    "كتب pdf",
+    "كتب تقنية",
+    "udemy مجانا",
+    "coursera مجانا",
+    "دورات telegram",
+
+    # ─────────────────────────────
+    # EARNING + OFFERS
+    # ─────────────────────────────
+
+    "الربح من الانترنت",
+    "تطبيقات ربح",
+    "عروض الامارات",
+    "اكواد خصم",
+    "كوبونات خصم",
+    "تخفيضات نون",
+    "عروض امازون",
+    "وفر فلوسك",
+    "كاش باك",
+    "اشتراكات رخيصة",
+
+    # ─────────────────────────────
+    # TELEGRAM DISCOVERY
+    # ─────────────────────────────
+
+    "قنوات تليجرام مفيدة",
+    "قنوات تليجرام عربية",
+    "افضل قنوات التليجرام",
+    "قنوات تطبيقات",
+    "قنوات افلام",
+    "قنوات ai",
+    "telegram channels",
+    "telegram directory",
+    "telegram عربي",
+    "telegram search"
+
+]
 PER_PAGE = 10
 MAX_PAGES = 5 # لضمان عدم تجاوز وقت GitHub Actions (6 ساعات)
 SAVE_FILE = "telegram_channels.csv"
