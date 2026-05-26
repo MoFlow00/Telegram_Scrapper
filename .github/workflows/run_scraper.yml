@@ -1,5 +1,9 @@
 name: Run Telegram Scraper
-on: [workflow_dispatch]
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */2 * * *'
 
 jobs:
   build:
@@ -10,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          fetch-depth: 0 # لسحب كامل التاريخ وتجنب مشاكل الـ Push
+          fetch-depth: 0
       
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -28,8 +32,11 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          # سحب أي تغييرات قد تكون حدثت (مثل تحديث الملف) قبل الـ Push
-          git pull origin main 
+          
+          git pull origin main
+          
           git add telegram_channels.csv
+          
           git commit -m "Add new scraped channels" || echo "No new data to commit"
+          
           git push origin main
